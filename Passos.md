@@ -1,16 +1,17 @@
-# Server starter
 
-https://hub.docker.com/r/hapiproject/hapi
+# Introdução
 
-## Introdução 
+## Servidor
 
-https://hapifhir.io/hapi-fhir/docs/server_jpa/introduction.html
+Foi utilizado o docker compose de exemplo do HAPI FIR.
+Continuou sendo utilzado o postgress pois é a db que eu tenho mais familiaridade das apresentadas.
 
-Aplication do server:
+Com essa solução, já está configurado a parte de java e de carregamento pelo marv.
 
-https://github.com/hapifhir/hapi-fhir-jpaserver-starter/blob/master/src/main/resources/application.yaml#L66
+rodando o docker-compose.yaml na pasta raiz irá subir o servidor sem nenhum problema.
 
+## Script
 
-Docker compose funcionando.
-Hora de fazer o script:
+Foi utilizado um script python junto com a biblioteca Pandas pois é a que eu mais tenho familiaridade para utilização, e como verifiquei que a empresa utiliza IA, é a linguagem mais em comum com os outros desenvolvedores.
 
+Ela lerá o arquivo patient.csv e irá carregar o Resource através de um payload json de paciente a paciente.
